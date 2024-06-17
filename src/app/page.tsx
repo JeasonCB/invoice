@@ -1,27 +1,27 @@
-'use client'
-import React, { useState } from 'react';
-import { Input } from '@nextui-org/input';
-import { Button } from '@nextui-org/button';
+//import Inputs from "./components/inputs";
 
-export default function Home() {
-  const [value1, setValue1] = useState(0);
-  const [value2, setValue2] = useState(0);
-  const [result, setResult] = useState(0);
+import Section from "./components/Section";
 
-  const handleButtonClick = () => {
-    let sum = value1 + value2;
-    setResult(sum);
-  }
-
+export default function page() {
   return (
     <>
-      <div className='grid place-items-center h-screen'>
-        <div className='grid w-64 gap-4'>
-          <Input type="number" label="Value1" placeholder='1' onChange={(e) => setValue1(Number(e.target.value))} />
-          <Input type="number" label="Valor2" placeholder='2' onChange={(e) => setValue2(Number(e.target.value))} />
-          <Button size="sm" onClick={handleButtonClick}>Procesar</Button>
-          <p>Resultado: {result}</p>
+      <div className="snap-y snap-mandatory  overflow-auto w-full h-screen">
+        <div className="snap-start snap-always">
+          <Section title='Your business' bgColor="bg-yellow-600" />
         </div>
+
+        <div className="snap-start snap-always">
+          <Section title='Your business' bgColor="bg-blue-500"/>
+        </div>
+
+        <div className="snap-start snap-always">
+          <Section title='your business' bgColor="bg-red-500"/>
+        </div>
+
+        <div className="snap-start snap-always">
+          <Section title='your business' />
+        </div>
+
       </div>
     </>
   );

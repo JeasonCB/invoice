@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+html {
+  scroll-behavior: smooth;
+} 
+
+body {
+  scrollbar-gutter: auto;
+}
+
+/* Para Chrome, Edge, y Safari */
+::-webkit-scrollbar {   
+  width: 0.1px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(69, 69, 69, 0.941);
+  border-radius: 0px;
+}
