@@ -5,9 +5,13 @@ function page() {
     return (
         <>
             <Link href="/">
-                <div className="snap-y snap-mandatory  overflow-auto w-full h-screen">
-                    <div className="snap-start snap-always">
-                        <Section title='Montaña Suites' bgColor="bg-green-900" />
+                <div className="snap-y snap-mandatory overflow-auto w-full h-screen">
+                    <div className="snap-end snap-always">
+                        <Section
+                            title='Disfruta, Vive y Baila'
+                            description="Date un break"
+                            image="/hotel.jpg"
+                            bgColor="bg-green-900" />
                     </div>
 
                     <div className="snap-start snap-always">
