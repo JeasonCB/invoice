@@ -9,8 +9,8 @@ export default function page() {
   const router = useRouter();
   useEffect(() => {
     const timer = setTimeout(() => {
-      router.prefetch('/plc');
-      router.push('/plc');
+      router.prefetch('/pto');
+      router.push('/pto');
     }, 2600); // Cambia este valor al número de milisegundos que quieras esperar antes de redirigir
     return () => clearTimeout(timer); // Esto limpiará el temporizador si el componente se desmonta antes de que el temporizador termine
   }, [router]);

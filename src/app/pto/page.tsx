@@ -3,24 +3,14 @@ import Section from "../components/Section";
 function page() {
     return (
         <>
-            <div className="snap-y snap-mandatory  overflow-auto w-full h-screen">
-                <div className="snap-start snap-always">
-                    <Section title='Bienvenido a Puerto Ordaz' bgColor="bg-yellow-600" />
+            <section className="flex w-[100dvw] h-[100vh]">
+                <div className=" bg-red-500 w-0 flex-grow object-cover opacity-80 transition-width hover:cursor-crosshair hover:w-[75dvw] hover:opacity-100 hover:contrast-125">
+                    <p className="">Familiar</p>
                 </div>
-
-                <div className="snap-start snap-always">
-                    <Section title='Your business' bgColor="bg-blue-500" />
+                <div className=" bg-blue-500 w-0 flex-grow object-cover opacity-80 transition-width  hover:cursor-crosshair hover:w-[75dvw] hover:opacity-100 hover:contrast-125">
+                    <p className="">Express</p>
                 </div>
-
-                <div className="snap-start snap-always">
-                    <Section title='your business' bgColor="bg-red-500" />
-                </div>
-
-                <div className="snap-start snap-always">
-                    <Section title='your business' />
-                </div>
-
-            </div>
+            </section>
         </>
     );
 }
